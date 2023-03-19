@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Login Form</title>
+    <style >
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: black;
+    text-align: center;
+}
+.box h1{
+    color:white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type="text"],.box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #4a9acf;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+</style>
+
+</head>
+<body>
+
+<form   class="box" action="index.html" method="post" id="lotable" name="loginform" onsubmit="return validateall()">
+    <h1>Login</h1>
+<input type="text" name="username" placeholder="username">
+<input type="password" name="password" placeholder="password">
+<input type="submit" name="login" value="Login">
+</form>
+</body>
+</html>
